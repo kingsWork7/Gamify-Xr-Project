@@ -13,11 +13,6 @@ for(let i = 0; i < btnsOpenModal.length; i++) {
     })
 }
 
-// btnCloseModal.addEventListener('click', function () {
-//     modal[i].classList.add('hidden');
-//     overlay.classList.add('hidden');
-// });
-
 for (let i = 0; i < btnCloseModal.length; i++) {
     btnCloseModal[i].addEventListener('click', function () {
       modal[i].classList.add('hidden');  
@@ -25,10 +20,6 @@ for (let i = 0; i < btnCloseModal.length; i++) {
     });
   }
 
-// overlay.addEventListener('click', function(){
-//     modal[i].classList.add('hidden');
-//     overlay.classList.add('hidden');
-// })
 
 overlay.addEventListener('click', function () {
     for (let i = 0; i < modal.length; i++) {
@@ -39,12 +30,12 @@ overlay.addEventListener('click', function () {
 
 // TO STOP AND PLAY SCENE PHOTO ANIMATION
 
-// const track = document.querySelector('.picture-track');
+const track = document.querySelector('.picture-track');
 
-// track.addEventListener('mouseenter', function () {
-//   track.style.animationPlayState = 'paused';
-// });
+track.addEventListener('mouseenter', function () {
+  track.style.animationPlayState = 'paused';
+});
 
-// track.addEventListener('mouseleave', function () {
-//   track.style.animationPlayState = 'running';
-// });
+track.addEventListener('mouseleave', function () {
+  track.style.animationPlayState = 'running';
+});

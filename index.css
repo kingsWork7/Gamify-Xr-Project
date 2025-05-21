@@ -66,6 +66,22 @@ html {
   justify-content: center;
 }
 
+.navButton1{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
 .logo {
     font-size: 3rem;
     font-weight: 800;
@@ -79,11 +95,16 @@ html {
 
 .navbar a {
     font-size: 1.8rem;
-    color: var(--text-color);
+    color: var(--second-text-color);
     padding: 20px;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+}
+
+.navbar{
+    display: flex;
+    gap: 1.5rem;
 }
 
 .navButton a {
@@ -93,6 +114,11 @@ html {
 .navButton:hover {
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--second-main-color);
+}
+
+.navButton1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
   }
 
 /*HOME AND VIDEO SECTION*/
@@ -253,7 +279,6 @@ html {
 
 .devices img:hover {
     transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 0 50px var(--second-bg-colormain-color);
     transition: 0.4s ease-in-out;
   }
 
@@ -304,9 +329,6 @@ html {
 
 .Experience span {
     color: #847DFF;
-}
-
-.Experience span{
     font-family: var(--titles);
 }
 
@@ -376,7 +398,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 450px;
+    height: 270px;
     background-color: white;
     padding: 6rem;
     border-radius: 20px;
@@ -390,6 +412,7 @@ html {
     font-size: 3.5rem;
     margin-top: 5px;
     padding-bottom: 25px;
+    font-family: var(--titles);
 }
 
 .modal p {
@@ -450,10 +473,11 @@ html {
     border-radius: 30px;
 }
 
-/* .pictures img:hover {
-    transform: scale(1.2) translateY(5px);
+.pictures img:hover {
+    transform: translateY(-10px) scale(1.03);
+   
     transition: 0.4s ease-in-out;
-} */
+}
 
 .photos{
     padding: 48px;
@@ -489,16 +513,11 @@ html {
     vertical-align: middle;
     border-radius: 30px;
 }
-/* PAUSE ANIMATION */
 
-.picture-slider:hover .picture-track {
-    animation-play-state: paused;
-} 
-
-.photo-slider:hover .photo-track {
-    animation-play-state: paused;
-} 
-  
+.photo-track img:hover {
+    transform: translateY(-10px) scale(1.03);
+    transition: 0.4s ease-in-out;
+}
 
 .footer {
     position: relative;
