@@ -11,6 +11,7 @@
 
  :root {
     --titles: 'Permanent Marker';
+    --heads:  'Exile';
     --bg-color: #fefefe;
     --second-bg-color: rgb(0, 0, 0);
     --text-color: black;
@@ -202,6 +203,7 @@ html {
     display: inline-block;
     padding: 4.7rem 18.8rem;
     background: var(--main-color);
+    /* font-family: var(--heads); */
     box-shadow: 15px 5px 35px 5px var(--main-color);
     border-radius: 10rem;
     font-size: 7.6rem;
@@ -690,8 +692,22 @@ html {
       width: 70%;
     }
 
-  }
+}
 
+@media (min-width: 1490px) {
+    .devices {
+      gap: 10rem; /* wider gap for larger screens */
+    }
+}
+
+  @font-face {
+    font-family: 'Exile';
+    src: url('fonts/exile/Exile-Regular.woff2') format('woff2'),
+        url('fonts/exile/Exile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 

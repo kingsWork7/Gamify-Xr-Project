@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Exile';
+    src: url('Exile-Regular.woff2') format('woff2'),
+        url('Exile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
